@@ -10,8 +10,8 @@
 
 ## 📍 Current Status
 
-```text id="x8kq2a"
-🔁 Currently studying: Recursion 
+```text
+🔁 Currently studying: Recursion (Intermediate Level)
 ```
 
 ---
@@ -44,27 +44,31 @@
 
 ---
 
-### ✔ Recursion (Started)
+### ✔ Recursion (Progressed)
 
 * Base case understanding
 * Simple recursion problems
 * Recursion tree idea
+* Array-based recursion problems
+* Divide & Conquer (Power - optimized)
+* Backtracking-style thinking (binary strings)
+* Combinatorics problems (friends pairing, tiling)
 
 ---
 
 ## 🚀 What I Am Currently Doing
 
-```text id="m3j8b1"
-🧠 Recursion strengthening
+```text
+🧠 Solving intermediate recursion problems (6–14)
 ```
 
 ---
 
 ## 🧩 Problem Tracking (REAL — update manually)
 
-```text id="q7x9ld"
-Arrays        : XX
-Recursion     : 5 
+```text
+Arrays        : Basic done
+Recursion     : 14 
 Strings       : Basic practice
 ```
 
@@ -72,32 +76,47 @@ Strings       : Basic practice
 
 ## ⚠️ REAL STRUGGLES (IMPORTANT)
 
-```text id="v5n8kd"
+```text
 ❌ Still slow in recursion thinking
-❌ Confusion in backtracking flow
-❌ Need more practice in pattern recognition
+❌ Backtracking logic not fully natural yet
+❌ Need more speed in identifying recursion patterns
 ```
 
 ---
 
 ## 🎯 NEXT REAL STEPS
 
-```text id="p9w2la"
-✔ Complete 10 Backtracking problems
-✔ Strengthen recursion trees
+```text
+✔ Solve 5–10 backtracking problems
+✔ Practice recursion trees deeply
 ✔ Start binary search basics
+✔ Revise all recursion problems once
 ```
 
 ---
 
-## 📈 DAILY LOG TEMPLATE
+## 📈 DAILY LOG (UPDATED)
 
-```text id="l2k9qp"
-Date: 
+```text
+Date: 22-03-2026
+
 What I studied:
+Recursion problems 6–14
+
 Problems solved:
+isSorted, first/last occurrence, power (normal + optimized),
+tiling problem, remove duplicates, friends pairing, binary strings
+
 What I understood:
+✔ How recursion works on arrays
+✔ Difference between forward & backward recursion
+✔ Divide & conquer optimization (O(log n))
+✔ Basic backtracking flow (binary strings)
+✔ Recursion in combinatorics problems
+
 Where I got stuck:
+❌ Took time to understand last occurrence (backtracking version)
+❌ Binary string logic needed careful thinking
 ```
 
 ---
@@ -107,10 +126,12 @@ Where I got stuck:
 👉 Progress tracker is NOT decoration
 👉 It is your **honest mirror**
 
-```text id="r1m8qz"
+```text
 Consistency > Fake Progress
 ```
 
 ---
 
 <h3 align="center">🚀 Build Real Skill, Not Fake Stats</h3>
+
+---
