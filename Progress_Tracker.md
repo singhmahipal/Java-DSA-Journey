@@ -11,7 +11,7 @@
 ## 📍 Current Status
 
 ```text
-🔁 Currently studying: Recursion (Intermediate Level)
+🔁 Currently studying: Divide & Conquer (Merge Sort + Quick Sort)
 ```
 
 ---
@@ -31,7 +31,7 @@
 
 * Arrays (basic level)
 * Strings (basic level)
-* Sorting algorithms (intro)
+* Sorting algorithms (intro → improved)
 * Bit manipulation (basic)
 
 ---
@@ -44,13 +44,13 @@
 
 ---
 
-### ✔ Recursion (Progressed)
+### ✔ Recursion (Strong Foundation)
 
 * Base case understanding
 * Simple recursion problems
 * Recursion tree idea
 * Array-based recursion problems
-* Divide & Conquer (Power - optimized)
+* Divide & Conquer (power optimized)
 * Backtracking-style thinking (binary strings)
 * Combinatorics problems (friends pairing, tiling)
 
@@ -59,7 +59,8 @@
 ## 🚀 What I Am Currently Doing
 
 ```text
-🧠 Solving intermediate recursion problems (6–14)
+🧠 Learning Divide & Conquer deeply (Merge Sort + Quick Sort)
+🧠 Understanding partition & merge logic clearly
 ```
 
 ---
@@ -68,7 +69,8 @@
 
 ```text
 Arrays        : Basic done
-Recursion     : 14 
+Recursion     : 14+
+Divide&Conq   : Started (Merge + Quick)
 Strings       : Basic practice
 ```
 
@@ -78,8 +80,9 @@ Strings       : Basic practice
 
 ```text
 ❌ Still slow in recursion thinking
-❌ Backtracking logic not fully natural yet
-❌ Need more speed in identifying recursion patterns
+❌ Partition logic (Quick Sort) needs more clarity
+❌ Sometimes confused during merge step
+❌ Need better visualization of recursion flow
 ```
 
 ---
@@ -87,10 +90,10 @@ Strings       : Basic practice
 ## 🎯 NEXT REAL STEPS
 
 ```text
-✔ Solve 5–10 backtracking problems
-✔ Practice recursion trees deeply
-✔ Start binary search basics
-✔ Revise all recursion problems once
+✔ Implement Merge Sort without seeing code
+✔ Implement Quick Sort 2–3 times
+✔ Practice dry run for partition logic
+✔ Solve few problems on Divide & Conquer
 ```
 
 ---
@@ -98,32 +101,34 @@ Strings       : Basic practice
 ## 📈 DAILY LOG (UPDATED)
 
 ```text
-Date: 22-03-2026
+Date: 23-03-2026
 
 What I studied:
-Recursion problems 6–14
+Merge Sort + Quick Sort (Divide & Conquer)
 
-Problems solved:
-isSorted, first/last occurrence, power (normal + optimized),
-tiling problem, remove duplicates, friends pairing, binary strings
+What I did:
+- Understood full flow of merge sort
+- Implemented merge function carefully
+- Learned partition logic in quick sort
+- Compared both sorting techniques
 
 What I understood:
-✔ How recursion works on arrays
-✔ Difference between forward & backward recursion
-✔ Divide & conquer optimization (O(log n))
-✔ Basic backtracking flow (binary strings)
-✔ Recursion in combinatorics problems
+✔ How array splits and merges step-by-step
+✔ Why merge sort is always O(n log n)
+✔ How pivot creates correct position in quick sort
+✔ Difference between divide & conquer vs simple recursion
 
 Where I got stuck:
-❌ Took time to understand last occurrence (backtracking version)
-❌ Binary string logic needed careful thinking
+❌ Merge logic took time to fully understand
+❌ Partition logic still feels slightly tricky
+❌ Need more practice to feel natural
 ```
 
 ---
 
 ## 🔥 RULE
 
-👉 Progress tracker is NOT decoration
+👉 Progress tracker is NOT decoration  
 👉 It is your **honest mirror**
 
 ```text
@@ -133,5 +138,3 @@ Consistency > Fake Progress
 ---
 
 <h3 align="center">🚀 Build Real Skill, Not Fake Stats</h3>
-
----
