@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center"> 
 
 # 📅 DSA Progress Tracker
 
@@ -10,9 +10,7 @@
 
 ## 📍 Current Status
 
-```text
-🔁 Currently studying: Divide & Conquer (Merge Sort + Quick Sort)
-```
+🔁 Currently studying: Divide & Conquer (Completed Merge Sort, Quick Sort, Rotated Search)
 
 ---
 
@@ -20,120 +18,116 @@
 
 ### ✔ Java Fundamentals
 
-* Variables & Data Types
-* Loops
-* Functions
-* Pattern Problems
+- Variables & Data Types  
+- Loops  
+- Functions  
+- Pattern Problems  
 
 ---
 
 ### ✔ Core DSA Started
 
-* Arrays (basic level)
-* Strings (basic level)
-* Sorting algorithms (intro → improved)
-* Bit manipulation (basic)
+- Arrays (basic level)  
+- Strings (basic level)  
+- Sorting algorithms (Merge Sort + Quick Sort)  
+- Bit manipulation (basic)  
 
 ---
 
 ### ✔ OOP Basics
 
-* Classes & Objects
-* Constructors
-* Methods
+- Classes & Objects  
+- Constructors  
+- Methods  
 
 ---
 
 ### ✔ Recursion (Strong Foundation)
 
-* Base case understanding
-* Simple recursion problems
-* Recursion tree idea
-* Array-based recursion problems
-* Divide & Conquer (power optimized)
-* Backtracking-style thinking (binary strings)
-* Combinatorics problems (friends pairing, tiling)
+- Base case understanding  
+- Simple recursion problems  
+- Recursion tree idea  
+- Array-based recursion problems  
+- Divide & Conquer (sorting + search)  
+- Backtracking-style thinking (binary strings)  
+- Combinatorics problems (friends pairing, tiling)  
+
+---
+
+### ✔ Divide & Conquer (NEW ✅)
+
+- Merge Sort (fully understood + implemented)  
+- Quick Sort (partition logic implemented)  
+- Search in Rotated Sorted Array (modified binary search)  
 
 ---
 
 ## 🚀 What I Am Currently Doing
 
-```text
-🧠 Learning Divide & Conquer deeply (Merge Sort + Quick Sort)
-🧠 Understanding partition & merge logic clearly
-```
+🧠 Strengthening Divide & Conquer concepts  
+🧠 Practicing rotated array and sorting problems  
 
 ---
 
-## 🧩 Problem Tracking (REAL — update manually)
+## 🧩 Problem Tracking 
 
-```text
-Arrays        : Basic done
-Recursion     : 14+
-Divide&Conq   : Started (Merge + Quick)
-Strings       : Basic practice
-```
+Arrays        : Basic done  
+Recursion     : 14+  
+Divide&Conq   : 3 problems done (Merge, Quick, Rotated Search)  
+Strings       : Basic practice  
 
 ---
 
 ## ⚠️ REAL STRUGGLES (IMPORTANT)
 
-```text
-❌ Still slow in recursion thinking
-❌ Partition logic (Quick Sort) needs more clarity
-❌ Sometimes confused during merge step
-❌ Need better visualization of recursion flow
-```
+❌ Still slow in recursion thinking  
+❌ Partition logic (Quick Sort) needs more confidence  
+❌ Merge step sometimes confusing in dry run  
+❌ Need better visualization of recursion flow  
 
 ---
 
 ## 🎯 NEXT REAL STEPS
 
-```text
-✔ Implement Merge Sort without seeing code
-✔ Implement Quick Sort 2–3 times
-✔ Practice dry run for partition logic
-✔ Solve few problems on Divide & Conquer
-```
+✔ Implement Merge Sort without seeing code (1–2 times)  
+✔ Implement Quick Sort multiple times  
+✔ Master partition logic with dry runs  
+✔ Solve few Divide & Conquer problems  
 
 ---
 
 ## 📈 DAILY LOG (UPDATED)
 
-```text
-Date: 23-03-2026
+Date: 24-03-2026  
 
-What I studied:
-Merge Sort + Quick Sort (Divide & Conquer)
+What I studied:  
+Divide & Conquer (Merge Sort, Quick Sort, Rotated Sorted Search)  
 
-What I did:
-- Understood full flow of merge sort
-- Implemented merge function carefully
-- Learned partition logic in quick sort
-- Compared both sorting techniques
+What I did:  
+- Implemented Merge Sort from scratch  
+- Practiced Quick Sort with partition logic  
+- Solved rotated sorted array search problem  
+- Compared recursion vs divide & conquer approaches  
 
-What I understood:
-✔ How array splits and merges step-by-step
-✔ Why merge sort is always O(n log n)
-✔ How pivot creates correct position in quick sort
-✔ Difference between divide & conquer vs simple recursion
+What I understood:  
+✔ How merge sort splits and merges efficiently  
+✔ Why time complexity is O(n log n)  
+✔ How pivot placement works in quick sort  
+✔ How binary search is modified for rotated arrays  
 
-Where I got stuck:
-❌ Merge logic took time to fully understand
-❌ Partition logic still feels slightly tricky
-❌ Need more practice to feel natural
-```
+Where I got stuck:  
+❌ Partition logic still needs practice  
+❌ Took time to trace recursion flow  
+❌ Need more confidence in dry runs  
 
 ---
 
 ## 🔥 RULE
 
 👉 Progress tracker is NOT decoration  
-👉 It is your **honest mirror**
+👉 It is your honest mirror  
 
-```text
-Consistency > Fake Progress
-```
+Consistency > Fake Progress  
 
 ---
 
