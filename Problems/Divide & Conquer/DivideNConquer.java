@@ -122,13 +122,61 @@ class DivideNConquer {
         return i;
     }
 
+    // Modified Binary Search
+    public static int search(int arr[], int tar, int si, int ei) {
+
+        // return -1 as the element didn't exist in the array
+        if (si > ei) {
+            return -1;
+        }
+
+        // Find's the mid Index
+        int mid = si + (ei-si)/2;
+
+        if (arr[mid] == tar) {
+            return mid;
+        }
+
+        // mid on L1
+        if (arr[si] <= arr[mid]) {
+
+            // case 1: tar on left side
+            if (arr[si] <= tar && tar <= arr[mid]) {
+                
+                return search(arr, tar, si, mid-1);
+            } 
+
+            //case 2: tar on right side
+            else {
+                
+                return search(arr, tar, mid+1, ei);
+            }
+        } 
+        
+        // mid on L2
+        else {
+            //case 3: tar on right
+            if (arr[mid] <= tar && tar <= arr[ei]) {
+                return search(arr, tar, mid+1, ei);
+            }
+            //case 4: tar on left
+            else {
+                return search(arr, tar, si, mid-1);
+            }
+        }
+    }
+
     public static void main(String[] args) {
 
-        int arr[] = {9, 7, 5, 1, 4};
+        int arr[] = {  4, 5,6,7, 0,1,2};
 
         // mergeSort(arr, 0, arr.length - 1);
 
-        quickSort(arr, 0, arr.length - 1);
-        printArr(arr);
+        // quickSort(arr, 0, arr.length - 1);
+        // printArr(arr);
+
+        int target = 1;
+        int tarIdx = search(arr, target, 0, arr.length-1);
+        System.out.println(tarIdx);
     }
 }
