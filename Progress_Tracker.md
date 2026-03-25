@@ -10,7 +10,7 @@
 
 ## 📍 Current Status
 
-🔁 Currently studying: Divide & Conquer (Completed Merge Sort, Quick Sort, Rotated Search)
+🔁 Currently studying: Divide & Conquer (Deepening understanding)
 
 ---
 
@@ -54,18 +54,20 @@
 
 ---
 
-### ✔ Divide & Conquer (NEW ✅)
+### ✔ Divide & Conquer (UPDATED ✅)
 
-- Merge Sort (fully understood + implemented)  
+- Merge Sort (numbers + strings implemented)  
 - Quick Sort (partition logic implemented)  
 - Search in Rotated Sorted Array (modified binary search)  
+- Majority Element (Brute Force + Divide & Conquer)  
 
 ---
 
 ## 🚀 What I Am Currently Doing
 
 🧠 Strengthening Divide & Conquer concepts  
-🧠 Practicing rotated array and sorting problems  
+🧠 Practicing majority element & sorting problems  
+🧠 Improving recursion thinking speed  
 
 ---
 
@@ -73,7 +75,7 @@
 
 Arrays        : Basic done  
 Recursion     : 14+  
-Divide&Conq   : 3 problems done (Merge, Quick, Rotated Search)  
+Divide&Conq   : 5 problems done (Merge, Quick, Rotated Search, Majority Element, String Merge Sort)  
 Strings       : Basic practice  
 
 ---
@@ -89,36 +91,39 @@ Strings       : Basic practice
 
 ## 🎯 NEXT REAL STEPS
 
-✔ Implement Merge Sort without seeing code (1–2 times)  
+✔ Implement Merge Sort without seeing code (strings + numbers)  
 ✔ Implement Quick Sort multiple times  
 ✔ Master partition logic with dry runs  
-✔ Solve few Divide & Conquer problems  
+✔ Practice majority element problem again  
+✔ Solve more Divide & Conquer problems  
 
 ---
 
 ## 📈 DAILY LOG (UPDATED)
 
-Date: 24-03-2026  
+**Date: 25-03-2026**
 
-What I studied:  
-Divide & Conquer (Merge Sort, Quick Sort, Rotated Sorted Search)  
+**What I studied:**  
+Divide & Conquer (Merge Sort + Majority Element)
 
-What I did:  
-- Implemented Merge Sort from scratch  
-- Practiced Quick Sort with partition logic  
-- Solved rotated sorted array search problem  
-- Compared recursion vs divide & conquer approaches  
+**What I did:**  
+- Implemented Merge Sort for strings  
+- Practiced merge step deeply  
+- Solved Majority Element using:
+  - Brute Force approach  
+  - Divide & Conquer approach  
+- Compared both approaches  
 
-What I understood:  
-✔ How merge sort splits and merges efficiently  
-✔ Why time complexity is O(n log n)  
-✔ How pivot placement works in quick sort  
-✔ How binary search is modified for rotated arrays  
+**What I understood:**  
+✔ How merge sort works for strings using lexicographical comparison  
+✔ How merging step actually builds sorted array  
+✔ How divide & conquer finds majority element  
+✔ Difference between brute force O(n²) and optimized approach  
 
-Where I got stuck:  
-❌ Partition logic still needs practice  
-❌ Took time to trace recursion flow  
-❌ Need more confidence in dry runs  
+**Where I got stuck:**  
+❌ Merge step still slightly confusing during dry run  
+❌ Took time to understand majority element recursion  
+❌ Need more practice to gain speed  
 
 ---
 
