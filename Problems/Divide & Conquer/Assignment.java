@@ -144,6 +144,106 @@ class Assignment {
         return majorityElementRec(arr, 0, arr.length - 1);
     }
 
+    // ===================== Question 3: Inversion Count =====================
+
+    // -------- Brute Force Approach --------
+    // Time Complexity: O(n^2)
+    // Checks every pair (i, j) such that i < j
+    // If arr[i] > arr[j], it is an inversion
+    public static void inversionCount(int[] arr) {
+        int count = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+
+                // If earlier element is greater than later element - inversion
+                if (arr[i] > arr[j]) {
+                    count++;
+                }
+            }
+        }
+
+        System.out.println(count);
+    }
+
+
+    // -------- Optimized Approach (Modified Merge Sort) --------
+    // Time Complexity: O(n log n)
+    // Uses divide & conquer to count inversions efficiently
+
+    // Merge function that also counts inversions
+    public static int merge(int[] arr, int left, int mid, int right) {
+
+        int inversionCount = 0;
+
+        int i = left;   // pointer for left subarray
+        int j = mid;    // pointer for right subarray
+        int k = 0;      // pointer for temp array
+
+        int temp[] = new int[right - left + 1];
+
+        // Merge both subarrays while counting inversions
+        while (i < mid && j <= right) {
+
+            // If element in left is smaller - no inversion
+            if (arr[i] <= arr[j]) {
+                temp[k++] = arr[i++];
+            } else {
+                // Inversion found
+                temp[k++] = arr[j++];
+
+                // All remaining elements in left subarray will form inversions
+                inversionCount += (mid - i);
+            }
+        }
+
+        // Copy remaining elements of left subarray
+        while (i < mid) {
+            temp[k++] = arr[i++];
+        }
+
+        // Copy remaining elements of right subarray
+        while (j <= right) {
+            temp[k++] = arr[j++];
+        }
+
+        // Copy sorted elements back to original array
+        for (i = left, k = 0; i <= right; i++, k++) {
+            arr[i] = temp[k];
+        }
+
+        return inversionCount;
+    }
+
+
+    // Recursive merge sort function that returns inversion count
+    public static int mergeSort(int[] arr, int left, int right) {
+
+        int inversionCount = 0;
+
+        // Divide array until single element remains
+        if (right > left) {
+
+            int mid = (left + right) / 2;
+
+            // Count inversions in left half
+            inversionCount += mergeSort(arr, left, mid);
+
+            // Count inversions in right half
+            inversionCount += mergeSort(arr, mid + 1, right);
+
+            // Count cross inversions while merging
+            inversionCount += merge(arr, left, mid + 1, right);
+        }
+
+        return inversionCount;
+    }
+
+
+    // Wrapper function
+    public static int getInversions(int arr[]) {
+        return mergeSort(arr, 0, arr.length - 1);
+    }
 
     public static void main(String[] args) {
 
@@ -167,6 +267,14 @@ class Assignment {
         // System.out.println(majorityElem(arr));
 
         // Divide & Conquer (O(n log n))
-        System.out.println(majorityElement(arr));
+        // System.out.println(majorityElement(arr));
+
+        // ===================== Question 3 Test =====================
+        // Brute force (O(n^2))
+        int arr1[] = {2,4,1,3,5};
+        // inversionCount(arr1);
+
+        // modified merge sort (O(n log n))
+        System.out.println(getInversions(arr1));
     }
 }
