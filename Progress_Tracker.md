@@ -60,6 +60,7 @@
 - Quick Sort (partition logic implemented)  
 - Search in Rotated Sorted Array (modified binary search)  
 - Majority Element (Brute Force + Divide & Conquer)  
+- Inversion Count (Brute Force + Optimized Merge Sort) ✅  
 
 ---
 
@@ -68,6 +69,7 @@
 🧠 Strengthening Divide & Conquer concepts  
 🧠 Practicing majority element & sorting problems  
 🧠 Improving recursion thinking speed  
+🧠 Debugging merge sort based problems (important improvement)  
 
 ---
 
@@ -75,7 +77,7 @@
 
 Arrays        : Basic done  
 Recursion     : 14+  
-Divide&Conq   : 5 problems done (Merge, Quick, Rotated Search, Majority Element, String Merge Sort)  
+Divide&Conq   : 6 problems done (Merge, Quick, Rotated Search, Majority Element, String Merge Sort, Inversion Count)  
 Strings       : Basic practice  
 
 ---
@@ -86,6 +88,7 @@ Strings       : Basic practice
 ❌ Partition logic (Quick Sort) needs more confidence  
 ❌ Merge step sometimes confusing in dry run  
 ❌ Need better visualization of recursion flow  
+❌ Small bugs in merge logic (index handling mistakes)  
 
 ---
 
@@ -95,35 +98,34 @@ Strings       : Basic practice
 ✔ Implement Quick Sort multiple times  
 ✔ Master partition logic with dry runs  
 ✔ Practice majority element problem again  
-✔ Solve more Divide & Conquer problems  
+✔ Focus on debugging mistakes faster  
 
 ---
 
 ## 📈 DAILY LOG (UPDATED)
 
-**Date: 25-03-2026**
+**Date: 27-03-2026**
 
 **What I studied:**  
-Divide & Conquer (Merge Sort + Majority Element)
+Divide & Conquer (Inversion Count + Debugging Merge Sort)
 
 **What I did:**  
-- Implemented Merge Sort for strings  
-- Practiced merge step deeply  
-- Solved Majority Element using:
-  - Brute Force approach  
-  - Divide & Conquer approach  
-- Compared both approaches  
+- Implemented inversion count using brute force  
+- Implemented optimized inversion count using merge sort  
+- Found and fixed bug in merge function (index increment issue)  
+- Understood why `(mid - i)` counts inversions  
+- Improved understanding of merge step logic  
 
 **What I understood:**  
-✔ How merge sort works for strings using lexicographical comparison  
-✔ How merging step actually builds sorted array  
-✔ How divide & conquer finds majority element  
-✔ Difference between brute force O(n²) and optimized approach  
+✔ How inversion count works using merge sort  
+✔ Why merge sort can count multiple inversions efficiently  
+✔ Importance of correct index handling in merge step  
+✔ Debugging is a key part of DSA learning  
 
 **Where I got stuck:**  
-❌ Merge step still slightly confusing during dry run  
-❌ Took time to understand majority element recursion  
-❌ Need more practice to gain speed  
+❌ Mistake in copying temp array back to original array  
+❌ Took time to identify index increment bug  
+❌ Merge logic still needs more practice for confidence  
 
 ---
 
