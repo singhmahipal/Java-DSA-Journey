@@ -10,7 +10,7 @@
 
 ## 📍 Current Status
 
-🔁 Currently studying: Divide & Conquer (Deepening understanding)
+🔁 Currently studying: Time & Space Complexity 
 
 ---
 
@@ -18,123 +18,129 @@
 
 ### ✔ Java Fundamentals
 
-- Variables & Data Types  
-- Loops  
-- Functions  
-- Pattern Problems  
+* Variables & Data Types
+* Loops
+* Functions
+* Pattern Problems
 
 ---
 
 ### ✔ Core DSA Started
 
-- Arrays (basic level)  
-- Strings (basic level)  
-- Sorting algorithms (Merge Sort + Quick Sort)  
-- Bit manipulation (basic)  
+* Arrays (basic level)
+* Strings (basic level)
+* Sorting algorithms (Merge Sort + Quick Sort)
+* Bit manipulation (basic)
+* Time & Space Complexity (basics + loop analysis) ✅
 
 ---
 
 ### ✔ OOP Basics
 
-- Classes & Objects  
-- Constructors  
-- Methods  
+* Classes & Objects
+* Constructors
+* Methods
 
 ---
 
 ### ✔ Recursion (Strong Foundation)
 
-- Base case understanding  
-- Simple recursion problems  
-- Recursion tree idea  
-- Array-based recursion problems  
-- Divide & Conquer (sorting + search)  
-- Backtracking-style thinking (binary strings)  
-- Combinatorics problems (friends pairing, tiling)  
+* Base case understanding
+* Simple recursion problems
+* Recursion tree idea
+* Array-based recursion problems
+* Divide & Conquer (sorting + search)
+* Backtracking-style thinking (binary strings)
+* Combinatorics problems (friends pairing, tiling)
 
 ---
 
 ### ✔ Divide & Conquer (UPDATED ✅)
 
-- Merge Sort (numbers + strings implemented)  
-- Quick Sort (partition logic implemented)  
-- Search in Rotated Sorted Array (modified binary search)  
-- Majority Element (Brute Force + Divide & Conquer)  
-- Inversion Count (Brute Force + Optimized Merge Sort) ✅  
+* Merge Sort (numbers + strings implemented)
+* Quick Sort (partition logic implemented)
+* Search in Rotated Sorted Array (modified binary search)
+* Majority Element (Brute Force + Divide & Conquer)
+* Inversion Count (Brute Force + Optimized Merge Sort) ✅
+
+---
+
+### ✔ Time & Space Complexity (NEW ✅)
+
+* Understood Big O notation (worst case analysis)
+* Learned Big Omega (best case) & Theta (average case)
+* Identified common complexities (O(1), O(log n), O(n), O(n²))
+* Analyzed simple loops → O(n)
+* Analyzed nested loops → O(n²)
+* Understood logarithmic loops → O(log n)
+* Learned space complexity (auxiliary vs input space)
 
 ---
 
 ## 🚀 What I Am Currently Doing
 
-🧠 Strengthening Divide & Conquer concepts  
-🧠 Practicing majority element & sorting problems  
-🧠 Improving recursion thinking speed  
-🧠 Debugging merge sort based problems (important improvement)  
+🧠 Practicing time complexity analysis alongside coding
+🧠 Identifying complexity patterns faster
 
 ---
 
-## 🧩 Problem Tracking 
+## 🧩 Problem Tracking
 
-Arrays        : Basic done  
-Recursion     : 14+  
-Divide&Conq   : 6 problems done (Merge, Quick, Rotated Search, Majority Element, String Merge Sort, Inversion Count)  
-Strings       : Basic practice  
+Arrays        : Basic done
+Recursion     : 14+
+Divide&Conq   : 6 problems done
+TimeComplexity: Basics + loop analysis done ✅
+Strings       : Basic practice
 
 ---
 
 ## ⚠️ REAL STRUGGLES (IMPORTANT)
 
-❌ Still slow in recursion thinking  
-❌ Partition logic (Quick Sort) needs more confidence  
-❌ Merge step sometimes confusing in dry run  
-❌ Need better visualization of recursion flow  
-❌ Small bugs in merge logic (index handling mistakes)  
+❌ Confusion between O(n) and O(n²) in some cases
+❌ Logarithmic complexity identification not instant
 
 ---
 
 ## 🎯 NEXT REAL STEPS
 
-✔ Implement Merge Sort without seeing code (strings + numbers)  
-✔ Implement Quick Sort multiple times  
-✔ Master partition logic with dry runs  
-✔ Practice majority element problem again  
-✔ Focus on debugging mistakes faster  
+✔ Practice time complexity on every problem
+✔ Identify O(log n) patterns quickly
+✔ Focus on debugging mistakes faster
 
 ---
 
 ## 📈 DAILY LOG (UPDATED)
 
-**Date: 27-03-2026**
+**Date: 28-03-2026**
 
-**What I studied:**  
-Divide & Conquer (Inversion Count + Debugging Merge Sort)
+**What I studied:**
+Time & Space Complexity 
 
-**What I did:**  
-- Implemented inversion count using brute force  
-- Implemented optimized inversion count using merge sort  
-- Found and fixed bug in merge function (index increment issue)  
-- Understood why `(mid - i)` counts inversions  
-- Improved understanding of merge step logic  
+**What I did:**
 
-**What I understood:**  
-✔ How inversion count works using merge sort  
-✔ Why merge sort can count multiple inversions efficiently  
-✔ Importance of correct index handling in merge step  
-✔ Debugging is a key part of DSA learning  
+* Learned Big O, Omega, Theta notations
+* Practiced analyzing simple and nested loops
+* Identified logarithmic loop patterns
 
-**Where I got stuck:**  
-❌ Mistake in copying temp array back to original array  
-❌ Took time to identify index increment bug  
-❌ Merge logic still needs more practice for confidence  
+**What I understood:**
+✔ How to analyze time complexity of loops
+✔ Difference between O(n), O(n²), and O(log n)
+✔ Why constants are ignored in Big O
+✔ Space complexity basics (auxiliary space)
+
+**Where I got stuck:**
+❌ Confusion in some nested loop cases
+❌ Took time to identify log-based complexity
+❌ Still slow in quick mental analysis
 
 ---
 
 ## 🔥 RULE
 
-👉 Progress tracker is NOT decoration  
-👉 It is your honest mirror  
+👉 Progress tracker is NOT decoration
+👉 It is your honest mirror
 
-Consistency > Fake Progress  
+Consistency > Fake Progress
 
 ---
 
