@@ -1,4 +1,4 @@
-<div align="center"> 
+<div align="center">  
 
 # 📅 DSA Progress Tracker
 
@@ -10,7 +10,7 @@
 
 ## 📍 Current Status
 
-🔁 Currently studying: Time & Space Complexity 
+🔁 Currently studying: **Time & Space Complexity (Advanced Analysis + Recursion + Sorting)**
 
 ---
 
@@ -31,7 +31,6 @@
 * Strings (basic level)
 * Sorting algorithms (Merge Sort + Quick Sort)
 * Bit manipulation (basic)
-* Time & Space Complexity (basics + loop analysis) ✅
 
 ---
 
@@ -65,82 +64,115 @@
 
 ---
 
-### ✔ Time & Space Complexity (NEW ✅)
+### ✔ Time & Space Complexity (FULL MODULE ✅)
 
-* Understood Big O notation (worst case analysis)
-* Learned Big Omega (best case) & Theta (average case)
-* Identified common complexities (O(1), O(log n), O(n), O(n²))
-* Analyzed simple loops → O(n)
-* Analyzed nested loops → O(n²)
-* Understood logarithmic loops → O(log n)
-* Learned space complexity (auxiliary vs input space)
+* Big O, Omega, Theta (clear understanding)
+* Complexity order (O(1) → O(2ⁿ))
+* Loop analysis (simple, nested, logarithmic)
+* Space complexity (input vs auxiliary)
+
+#### 🔥 Algorithm Analysis Added:
+
+* Bubble Sort (best, avg, worst cases)
+* Binary Search (logarithmic analysis)
+* Recursive functions complexity
+* Fibonacci (naive vs optimized insight)
+* Merge Sort → O(n log n) with recurrence
+* Recurrence relations (basic Master Theorem idea)
+* Power Function:
+
+  * Naive → O(n)
+  * Fast Power → O(log n)
+  * Iterative fast exponentiation
 
 ---
 
 ## 🚀 What I Am Currently Doing
 
-🧠 Practicing time complexity analysis alongside coding
-🧠 Identifying complexity patterns faster
+* 🧠 Practicing **problem + complexity analysis together**
+* 🧠 Connecting **recursion → recurrence → final complexity**
+* 🧠 Improving speed in identifying patterns (O(log n), O(n log n), etc.)
 
 ---
 
 ## 🧩 Problem Tracking
 
-Arrays        : Basic done
-Recursion     : 14+
-Divide&Conq   : 6 problems done
-TimeComplexity: Basics + loop analysis done ✅
-Strings       : Basic practice
+| Topic            | Progress          |
+| ---------------- | ----------------- |
+| Arrays           | Basic ✅           |
+| Recursion        | 15+ Problems ✅    |
+| Divide & Conquer | 6 Problems ✅      |
+| Time Complexity  | Full + Advanced ✅ |
+| Strings          | Basic Practice 🔄 |
 
 ---
 
-## ⚠️ REAL STRUGGLES (IMPORTANT)
+## ⚠️ Real Struggles (Important)
 
-❌ Confusion between O(n) and O(n²) in some cases
-❌ Logarithmic complexity identification not instant
-
----
-
-## 🎯 NEXT REAL STEPS
-
-✔ Practice time complexity on every problem
-✔ Identify O(log n) patterns quickly
-✔ Focus on debugging mistakes faster
+* ❌ Slow in deriving recurrence relations
+* ❌ Confusion: **O(log n) vs O(n log n)**
+* ❌ Forgetting **recursion space complexity**
+* ❌ Pattern recognition not instant yet
 
 ---
 
-## 📈 DAILY LOG (UPDATED)
+## 🎯 Next Real Steps
 
-**Date: 28-03-2026**
-
-**What I studied:**
-Time & Space Complexity 
-
-**What I did:**
-
-* Learned Big O, Omega, Theta notations
-* Practiced analyzing simple and nested loops
-* Identified logarithmic loop patterns
-
-**What I understood:**
-✔ How to analyze time complexity of loops
-✔ Difference between O(n), O(n²), and O(log n)
-✔ Why constants are ignored in Big O
-✔ Space complexity basics (auxiliary space)
-
-**Where I got stuck:**
-❌ Confusion in some nested loop cases
-❌ Took time to identify log-based complexity
-❌ Still slow in quick mental analysis
+* ✔ Practice mixed problems (**code + analysis**)
+* ✔ Master **recurrence relations (Master Theorem)**
+* ✔ Revise **sorting + searching deeply**
+* ✔ Start **medium-level problems**
+* ✔ Improve **speed + accuracy**
 
 ---
 
-## 🔥 RULE
+## 📈 Daily Log
 
-👉 Progress tracker is NOT decoration
-👉 It is your honest mirror
+### 📅 Date: 29-03-2026
 
-Consistency > Fake Progress
+---
+
+### 🧠 What I Studied
+
+**Time & Space Complexity (Advanced + Algorithm Analysis)**
+
+---
+
+### ⚙️ What I Did
+
+* Analyzed **Bubble Sort** (all cases)
+* Revised **Binary Search**
+* Practiced **recursion complexity problems**
+* Understood **Fibonacci → exponential growth**
+* Learned **Merge Sort recurrence → O(n log n)**
+* Implemented **Fast Power (O(log n))**
+
+---
+
+### ✅ What I Understood
+
+* ✔ Clear difference: **O(n), O(log n), O(n log n)**
+* ✔ Recursion adds **stack space complexity**
+* ✔ Fibonacci → **exponential due to repeated calls**
+* ✔ Divide & Conquer → **efficient splitting**
+* ✔ Fast exponentiation → **huge optimization**
+
+---
+
+### ❌ Where I Got Stuck
+
+* ❌ Recurrence solving not instant
+* ❌ Minor confusion in recursive space
+* ❌ Need faster pattern recognition
+
+---
+
+## 🔥 Rule
+
+* 👉 Progress tracker is **NOT decoration**
+* 👉 It is your **honest mirror**
+
+**Consistency > Fake Progress**
 
 ---
 
