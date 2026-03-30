@@ -10,7 +10,7 @@
 
 ## 📍 Current Status
 
-🔁 Currently studying: **Time & Space Complexity (Advanced Analysis + Recursion + Sorting)**
+🔁 Currently studying: **Backtracking (Introduction + Types + Arrays)**
 
 ---
 
@@ -54,13 +54,13 @@
 
 ---
 
-### ✔ Divide & Conquer (UPDATED ✅)
+### ✔ Divide & Conquer
 
 * Merge Sort (numbers + strings implemented)
 * Quick Sort (partition logic implemented)
 * Search in Rotated Sorted Array (modified binary search)
 * Majority Element (Brute Force + Divide & Conquer)
-* Inversion Count (Brute Force + Optimized Merge Sort) ✅
+* Inversion Count (Brute Force + Optimized Merge Sort)
 
 ---
 
@@ -87,11 +87,20 @@
 
 ---
 
+### ✔ Backtracking (STARTED ✅)
+
+* Introduction to backtracking
+* Types of backtracking (decision / permutation / combination / constraint)
+* Backtracking approach (choose → explore → undo)
+* Backtracking in arrays (subsets concept)
+
+---
+
 ## 🚀 What I Am Currently Doing
 
-* 🧠 Practicing **problem + complexity analysis together**
-* 🧠 Connecting **recursion → recurrence → final complexity**
-* 🧠 Improving speed in identifying patterns (O(log n), O(n log n), etc.)
+* 🧠 Practicing **basic backtracking problems**
+* 🧠 Connecting **recursion → backtracking mindset**
+* 🧠 Improving **choice + undo pattern clarity**
 
 ---
 
@@ -103,67 +112,65 @@
 | Recursion        | 15+ Problems ✅    |
 | Divide & Conquer | 6 Problems ✅      |
 | Time Complexity  | Full + Advanced ✅ |
+| Backtracking     | Started 🔄        |
 | Strings          | Basic Practice 🔄 |
 
 ---
 
 ## ⚠️ Real Struggles (Important)
 
-* ❌ Slow in deriving recurrence relations
-* ❌ Confusion: **O(log n) vs O(n log n)**
-* ❌ Forgetting **recursion space complexity**
-* ❌ Pattern recognition not instant yet
+* ❌ Confusion in **when to backtrack**
+* ❌ Forgetting **undo step**
+* ❌ Difficulty identifying **problem type**
+* ❌ Slow in tracing recursion tree
 
 ---
 
 ## 🎯 Next Real Steps
 
-* ✔ Practice mixed problems (**code + analysis**)
-* ✔ Master **recurrence relations (Master Theorem)**
-* ✔ Revise **sorting + searching deeply**
-* ✔ Start **medium-level problems**
-* ✔ Improve **speed + accuracy**
+* ✔ Solve **subset problems**
+* ✔ Practice **permutations**
+* ✔ Master **choice → explore → undo**
+* ✔ Draw recursion trees daily
+* ✔ Move to **medium-level backtracking problems**
 
 ---
 
 ## 📈 Daily Log
 
-### 📅 Date: 29-03-2026
+### 📅 Date: 30-03-2026
 
 ---
 
 ### 🧠 What I Studied
 
-**Time & Space Complexity (Advanced + Algorithm Analysis)**
+**Backtracking (Introduction + Types + Arrays)**
 
 ---
 
 ### ⚙️ What I Did
 
-* Analyzed **Bubble Sort** (all cases)
-* Revised **Binary Search**
-* Practiced **recursion complexity problems**
-* Understood **Fibonacci → exponential growth**
-* Learned **Merge Sort recurrence → O(n log n)**
-* Implemented **Fast Power (O(log n))**
+* Learned **what backtracking is**
+* Understood **types of backtracking**
+* Practiced **basic subset logic**
+* Implemented **choose → explore → undo pattern**
 
 ---
 
 ### ✅ What I Understood
 
-* ✔ Clear difference: **O(n), O(log n), O(n log n)**
-* ✔ Recursion adds **stack space complexity**
-* ✔ Fibonacci → **exponential due to repeated calls**
-* ✔ Divide & Conquer → **efficient splitting**
-* ✔ Fast exponentiation → **huge optimization**
+* ✔ Backtracking = recursion + undo step
+* ✔ Every problem is based on **choices**
+* ✔ Need to explore all possibilities
+* ✔ Undo step is **mandatory**
 
 ---
 
 ### ❌ Where I Got Stuck
 
-* ❌ Recurrence solving not instant
-* ❌ Minor confusion in recursive space
-* ❌ Need faster pattern recognition
+* ❌ Confusion in choosing correct pattern
+* ❌ Slow in writing recursive structure
+* ❌ Need more practice for clarity
 
 ---
 
