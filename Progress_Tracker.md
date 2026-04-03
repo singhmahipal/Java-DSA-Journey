@@ -10,7 +10,7 @@
 
 ## 📍 Current Status
 
-🔁 Currently studying: **Backtracking (Introduction + Types + Arrays)**
+🔁 Currently studying: **Backtracking (Subset + Permutation + N-Queen Basics)**
 
 ---
 
@@ -87,20 +87,23 @@
 
 ---
 
-### ✔ Backtracking (STARTED ✅)
+### ✔ Backtracking (IN PROGRESS 🔄)
 
 * Introduction to backtracking
 * Types of backtracking (decision / permutation / combination / constraint)
 * Backtracking approach (choose → explore → undo)
-* Backtracking in arrays (subsets concept)
+* Subset problem (include / exclude pattern)
+* Permutation problem (fix + recurse pattern)
+* N-Queen problem (basic constraint understanding)
 
 ---
 
 ## 🚀 What I Am Currently Doing
 
-* 🧠 Practicing **basic backtracking problems**
-* 🧠 Connecting **recursion → backtracking mindset**
-* 🧠 Improving **choice + undo pattern clarity**
+* 🧠 Practicing **subset problems**
+* 🧠 Practicing **permutation problems**
+* 🧠 Understanding **N-Queen logic**
+* 🧠 Strengthening **choice → explore → undo pattern**
 
 ---
 
@@ -112,65 +115,65 @@
 | Recursion        | 15+ Problems ✅    |
 | Divide & Conquer | 6 Problems ✅      |
 | Time Complexity  | Full + Advanced ✅ |
-| Backtracking     | Started 🔄        |
+| Backtracking     | Core Patterns 🔄  |
 | Strings          | Basic Practice 🔄 |
 
 ---
 
 ## ⚠️ Real Struggles (Important)
 
-* ❌ Confusion in **when to backtrack**
-* ❌ Forgetting **undo step**
-* ❌ Difficulty identifying **problem type**
-* ❌ Slow in tracing recursion tree
+* ❌ Confusion in **pattern selection (subset vs permutation)**
+* ❌ Forgetting **undo step sometimes**
+* ❌ Slow recursion tracing
+* ❌ N-Queen visualization still weak
 
 ---
 
 ## 🎯 Next Real Steps
 
-* ✔ Solve **subset problems**
-* ✔ Practice **permutations**
-* ✔ Master **choice → explore → undo**
+* ✔ Solve **more subset variations**
+* ✔ Practice **permutations deeply**
+* ✔ Improve **N-Queen understanding**
 * ✔ Draw recursion trees daily
-* ✔ Move to **medium-level backtracking problems**
+* ✔ Start **medium-level backtracking problems**
 
 ---
 
 ## 📈 Daily Log
 
-### 📅 Date: 30-03-2026
+### 📅 Date: 03-04-2026
 
 ---
 
 ### 🧠 What I Studied
 
-**Backtracking (Introduction + Types + Arrays)**
+**Backtracking (Subset + Permutation + N-Queen)**
 
 ---
 
 ### ⚙️ What I Did
 
-* Learned **what backtracking is**
-* Understood **types of backtracking**
-* Practiced **basic subset logic**
-* Implemented **choose → explore → undo pattern**
+* Practiced **subset problem (include/exclude)**
+* Implemented **permutation logic**
+* Studied **N-Queen constraint checking**
+* Improved **backtracking structure (choose → explore → undo)**
 
 ---
 
 ### ✅ What I Understood
 
-* ✔ Backtracking = recursion + undo step
-* ✔ Every problem is based on **choices**
-* ✔ Need to explore all possibilities
-* ✔ Undo step is **mandatory**
+* ✔ Subset = decision tree (include / exclude)
+* ✔ Permutation = fix one element + recurse
+* ✔ N-Queen = constraint-based backtracking
+* ✔ Backtracking requires **strict undo step**
 
 ---
 
 ### ❌ Where I Got Stuck
 
-* ❌ Confusion in choosing correct pattern
-* ❌ Slow in writing recursive structure
-* ❌ Need more practice for clarity
+* ❌ Pattern confusion (when to use which)
+* ❌ N-Queen still hard to visualize
+* ❌ Need faster recursion tracing
 
 ---
 
