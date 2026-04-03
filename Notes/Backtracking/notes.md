@@ -14,9 +14,9 @@ Backtracking is an algorithmic technique used to solve problems by trying all po
 
 👉 **Try → Explore → Undo (Backtrack)**
 
-- Make a choice  
-- Recurse to explore further  
-- If it fails, undo the choice  
+* Make a choice
+* Recurse to explore further
+* If it fails, undo the choice
 
 ---
 
@@ -47,51 +47,134 @@ function backtrack(state){
 ## 🧩 Types of Backtracking
 
 ### 1️⃣ Decision Based
-- Yes / No choices  
-- Example: Subsets
+
+* Yes / No choices
+* Example: Subsets
 
 ---
 
 ### 2️⃣ Permutation Based
-- Arrange elements in all possible ways  
-- Example: Permutations of array
+
+* Arrange elements in all possible ways
+* Example: Permutations
 
 ---
 
 ### 3️⃣ Combination Based
-- Select elements without caring about order  
-- Example: Combination Sum
+
+* Select elements without caring about order
+* Example: Combination Sum
 
 ---
 
 ### 4️⃣ Constraint Based
-- Follow rules / constraints  
-- Example: N-Queens, Sudoku
+
+* Follow rules / constraints
+* Example: N-Queens, Sudoku
 
 ---
 
-## 📦 Backtracking in Arrays
-
-### ✔ Use Cases
-- Generating subsets  
-- Finding permutations  
-- Combination problems  
+## 📦 Important Problems
 
 ---
 
-### 💡 Example: Subsets
+### 🔹 1. Subset Problem (Power Set)
+
+👉 Generate all possible subsets of a string
 
 ```java
-void backtrack(int[] nums, int index, List<Integer> current){
-    result.add(new ArrayList<>(current));
+void findSubsets(String str, String ans, int i){
+    if(i == str.length()){
+        if(ans.length() == 0){
+            System.out.println("null");
+        } else {
+            System.out.println(ans);
+        }
+        return;
+    }
 
-    for(int i = index; i < nums.length; i++){
-        current.add(nums[i]);              // choose
-        backtrack(nums, i + 1, current);  // explore
-        current.remove(current.size()-1); // undo
+    // include current character
+    findSubsets(str, ans + str.charAt(i), i + 1);
+
+    // exclude current character
+    findSubsets(str, ans, i + 1);
+}
+```
+
+💡 Pattern: **Include / Exclude (Decision Tree)**
+⏱ Time Complexity: `O(2^n)`
+
+---
+
+### 🔹 2. Permutation Problem
+
+👉 Generate all permutations of a string
+
+```java
+void findPermutation(String str, String ans){
+    if(str.length() == 0){
+        System.out.println(ans);
+        return;
+    }
+
+    for(int i = 0; i < str.length(); i++){
+        char curr = str.charAt(i);
+
+        String newStr = str.substring(0, i) + str.substring(i + 1);
+
+        findPermutation(newStr, ans + curr);
     }
 }
 ```
+
+💡 Pattern: **Fix one element, permute rest**
+⏱ Time Complexity: `O(n!)`
+
+---
+
+### 🔹 3. N-Queen Problem
+
+👉 Place N queens so that no queen attacks another
+
+```java
+boolean isSafe(char[][] board, int row, int col){
+
+    // check vertical up
+    for(int i = row - 1; i >= 0; i--){
+        if(board[i][col] == 'Q') return false;
+    }
+
+    // check left diagonal
+    for(int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--){
+        if(board[i][j] == 'Q') return false;
+    }
+
+    // check right diagonal
+    for(int i = row - 1, j = col + 1; i >= 0 && j < board.length; i--, j++){
+        if(board[i][j] == 'Q') return false;
+    }
+
+    return true;
+}
+
+void nQueen(char[][] board, int row){
+    if(row == board.length){
+        printBoard(board);
+        return;
+    }
+
+    for(int col = 0; col < board.length; col++){
+        if(isSafe(board, row, col)){
+            board[row][col] = 'Q';   // choose
+            nQueen(board, row + 1);  // explore
+            board[row][col] = '.';   // undo (backtrack)
+        }
+    }
+}
+```
+
+💡 Pattern: **Constraint + Backtracking**
+⏱ Time Complexity: ~`O(N!)`
 
 ---
 
@@ -99,8 +182,8 @@ void backtrack(int[] nums, int index, List<Integer> current){
 
 👉 Think like this:
 
-- “At every step, I have choices”  
-- “I will try each choice”  
-- “If it fails, I go back”  
+* “At every step, I have choices”
+* “I will try each choice”
+* “If it fails, I go back”
 
 ---
