@@ -1,4 +1,3 @@
-
 # ❌ Mistakes & Struggles - Backtracking
 
 ---
@@ -43,6 +42,9 @@ Clearly define:
 
 **Problem:** Couldn’t structure solution  
 
+**Why it happened:**  
+Did not understand “undo step”  
+
 **Fix:**  
 👉 Recursion = go deeper  
 👉 Backtracking = go deeper + undo  
@@ -52,6 +54,9 @@ Clearly define:
 ## 🚫 Mistake 5: Not Visualizing Tree
 
 **Problem:** Hard to debug  
+
+**Why it happened:**  
+Tried to think linearly  
 
 **Fix:**  
 Draw **recursion tree / decision tree**
@@ -79,7 +84,10 @@ Draw **recursion tree / decision tree**
 
 **Fix:**  
 👉 Remove current character before recursion  
-👉 Use correct substring split  
+👉 Use:
+```
+str.substring(0,i) + str.substring(i+1)
+```
 
 ---
 
@@ -100,61 +108,97 @@ Draw **recursion tree / decision tree**
 
 ---
 
-## 📉 Current Weak Areas
+## 🚫 Mistake 9: Grid Ways Bug (IMPORTANT)
 
-- ❌ Choosing correct pattern (subset / permutation / combination)  
-- ❌ Handling duplicates  
-- ❌ Writing clean recursive structure  
-
----
-
-## 🔄 Improvement Plan
-
-✔ Solve 2–3 problems daily  
-✔ Classify problem type first  
-✔ Always draw recursion tree  
-✔ Practice dry run on paper  
-
----
-
-## 🧠 Reality Check
-
-👉 If stuck → Pattern not clear  
-👉 If confused → Didn’t visualize tree  
-👉 If wrong output → Undo step missing  
-
----
-**Example:**  
-Used wrong index movement  
-
-**Fix:**  
-- Use `i + 1` for combinations  
-- Use visited array for permutations  
-
----
-
-## 🚫 Mistake 4: Confusion Between Recursion & Backtracking
-
-**Problem:** Couldn’t structure solution  
+**Problem:** Wrong number of paths  
 
 **Why it happened:**  
-Did not understand “undo step”  
+Wrong boundary condition  
 
-**Fix:**  
-👉 Recursion = solve smaller problem  
-👉 Backtracking = solve + undo  
+❌ Wrong:
+```
+j == row
+```
+
+✅ Correct:
+```
+j == col
+```
 
 ---
 
-## 🚫 Mistake 5: Not Visualizing Tree
+## 🚫 Mistake 10: Sudoku Backtracking Errors
 
-**Problem:** Hard to debug  
-
-**Why it happened:**  
-Tried to think linearly  
+❌ Didn’t reset cell  
+❌ Wrong 3x3 grid calculation  
+❌ Tried invalid digits repeatedly  
 
 **Fix:**  
-Draw **decision tree / recursion tree**
+
+👉 Always reset:
+```
+sudoku[row][col] = 0;
+```
+
+👉 Correct subgrid:
+```
+sr = (row/3)*3
+sc = (col/3)*3
+```
+
+---
+
+## 🚫 Mistake 11: Mutable State Confusion
+
+**Problem:** Values changing unexpectedly  
+
+**Why it happened:**  
+Same array/board reused across recursion  
+
+**Fix:**  
+👉 Always undo changes before returning  
+
+---
+
+## 🚫 Mistake 12: Infinite Recursion
+
+**Problem:** Stack overflow  
+
+**Why it happened:**  
+- Missing base case  
+- Wrong recursive movement  
+
+**Fix:**  
+👉 Ensure progress toward base case every call  
+
+---
+
+# 🧠 Debugging Checklist
+
+Before coding:
+- ✅ Base case defined?
+- ✅ Choices clear?
+- ✅ Backtracking step present?
+
+During debugging:
+- 🔍 Print recursion calls
+- 🔍 Track array/board changes
+- 🔍 Check undo step
+
+---
+
+# 🔥 Pro Tips
+
+- Always visualize recursion tree  
+- Use small inputs to debug  
+- Dry run manually  
+- If stuck → check base case + undo  
+
+---
+
+# ⚡ Golden Rule
+
+👉 **"Every change you make must be undone"**
 
 ---
 
