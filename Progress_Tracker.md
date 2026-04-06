@@ -1,4 +1,4 @@
-<div align="center">  
+<div align="center">   
 
 # 📅 DSA Progress Tracker
 
@@ -10,7 +10,7 @@
 
 ## 📍 Current Status
 
-🔁 Currently studying: **Backtracking (Subset + Permutation + N-Queen Basics)**
+🔁 Currently studying: **Backtracking (Array + Subset + Permutation + N-Queen + Sudoku + Grid Ways)**
 
 ---
 
@@ -80,7 +80,6 @@
 * Merge Sort → O(n log n) with recurrence
 * Recurrence relations (basic Master Theorem idea)
 * Power Function:
-
   * Naive → O(n)
   * Fast Power → O(log n)
   * Iterative fast exponentiation
@@ -92,9 +91,12 @@
 * Introduction to backtracking
 * Types of backtracking (decision / permutation / combination / constraint)
 * Backtracking approach (choose → explore → undo)
+* Array backtracking
 * Subset problem (include / exclude pattern)
 * Permutation problem (fix + recurse pattern)
-* N-Queen problem (basic constraint understanding)
+* N-Queen problem (constraint checking + diagonal logic)
+* Sudoku solver backtracking
+* Grid Ways counting
 
 ---
 
@@ -102,8 +104,10 @@
 
 * 🧠 Practicing **subset problems**
 * 🧠 Practicing **permutation problems**
-* 🧠 Understanding **N-Queen logic**
-* 🧠 Strengthening **choice → explore → undo pattern**
+* 🧠 Visualizing **N-Queen placements**
+* 🧠 Understanding **Sudoku backtracking**
+* 🧠 Tracing **Grid Ways recursion**
+* 🧠 Strengthening **choose → explore → undo pattern**
 
 ---
 
@@ -117,15 +121,18 @@
 | Time Complexity  | Full + Advanced ✅ |
 | Backtracking     | Core Patterns 🔄  |
 | Strings          | Basic Practice 🔄 |
+| Sudoku Solver    | Started 🔄        |
+| Grid Ways        | Started 🔄        |
 
 ---
 
 ## ⚠️ Real Struggles (Important)
 
-* ❌ Confusion in **pattern selection (subset vs permutation)**
+* ❌ Confusion in **pattern selection (subset vs permutation vs grid ways)**
 * ❌ Forgetting **undo step sometimes**
 * ❌ Slow recursion tracing
 * ❌ N-Queen visualization still weak
+* ❌ Sudoku constraints tricky initially
 
 ---
 
@@ -134,20 +141,22 @@
 * ✔ Solve **more subset variations**
 * ✔ Practice **permutations deeply**
 * ✔ Improve **N-Queen understanding**
+* ✔ Practice **Sudoku backtracking thoroughly**
 * ✔ Draw recursion trees daily
 * ✔ Start **medium-level backtracking problems**
+* ✔ Track mistakes & corrections regularly
 
 ---
 
 ## 📈 Daily Log
 
-### 📅 Date: 03-04-2026
+### 📅 Date: 05-04-2026
 
 ---
 
 ### 🧠 What I Studied
 
-**Backtracking (Subset + Permutation + N-Queen)**
+**Backtracking (Array + Subset + Permutation + N-Queen + Sudoku + Grid Ways)**
 
 ---
 
@@ -156,6 +165,8 @@
 * Practiced **subset problem (include/exclude)**
 * Implemented **permutation logic**
 * Studied **N-Queen constraint checking**
+* Traced **Sudoku backtracking**
+* Counted **Grid Ways with recursion**
 * Improved **backtracking structure (choose → explore → undo)**
 
 ---
@@ -165,6 +176,8 @@
 * ✔ Subset = decision tree (include / exclude)
 * ✔ Permutation = fix one element + recurse
 * ✔ N-Queen = constraint-based backtracking
+* ✔ Sudoku = recursive fill + backtrack
+* ✔ Grid Ways = move right/down recursively
 * ✔ Backtracking requires **strict undo step**
 
 ---
@@ -172,8 +185,9 @@
 ### ❌ Where I Got Stuck
 
 * ❌ Pattern confusion (when to use which)
-* ❌ N-Queen still hard to visualize
-* ❌ Need faster recursion tracing
+* ❌ N-Queen visualization still hard
+* ❌ Sudoku backtracking slow initially
+* ❌ Grid ways recursion boundaries tricky
 
 ---
 
