@@ -1,189 +1,246 @@
-# 🧠 Topic: Backtracking
+# Backtracking Notes
+
+## 🚀 What is Backtracking?
+Backtracking is a problem-solving technique where we:
+- Try a solution
+- Move forward recursively
+- If it fails → undo (backtrack) and try another path
+
+### 🔍 Intuition
+Think of it like:
+- Solving a maze 🧩
+- If a path is blocked → go back and try another
+
+### 🔁 Relation with Recursion
+- Recursion explores possibilities
+- Backtracking controls and reverses choices
 
 ---
 
-## 📌 Definition
+## 🧠 Core Pattern
 
-Backtracking is an algorithmic technique used to solve problems by trying all possible solutions and undoing choices (backtracking) when a solution path fails.
+### 🔄 Template
+```
+choose
+recurse
+undo (backtrack)
+```
 
-👉 It is an extension of recursion where we explore **choices + revert them**.
-
----
-
-## ⚙️ Key Idea
-
-👉 **Try → Explore → Undo (Backtrack)**
-
-* Make a choice
-* Recurse to explore further
-* If it fails, undo the choice
+### 💡 Explanation
+- **Choose** → Make a decision
+- **Explore** → Recurse deeper
+- **Un-choose** → Undo decision (IMPORTANT)
 
 ---
 
-## 🔁 General Structure
+## 🔁 Dry Run (Subset "ab")
 
-```java
-function backtrack(state){
-    if(solution_found){
-        print/store result;
-        return;
-    }
+```
+                ""
+             /      \
+           "a"      ""
+          /   \     /  \
+       "ab"  "a"  "b"  ""
+```
 
-    for(choice in choices){
-        // make choice
-        apply(choice);
-
-        // explore
-        backtrack(updated_state);
-
-        // undo choice (backtrack)
-        remove(choice);
-    }
-}
+Output:
+```
+ab
+a
+b
+null
 ```
 
 ---
 
-## 🧩 Types of Backtracking
-
-### 1️⃣ Decision Based
-
-* Yes / No choices
-* Example: Subsets
+# 📚 Problems Covered
 
 ---
 
-### 2️⃣ Permutation Based
+## 1. Backtracking on Array
 
-* Arrange elements in all possible ways
-* Example: Permutations
+### 🔍 Problem
+Fill an array with values and show how values change during backtracking.
 
----
+### 💡 Intuition
+We modify array while going forward and revert while coming back.
 
-### 3️⃣ Combination Based
+### ⚙️ Approach
+- Assign value
+- Recurse
+- Subtract value (undo)
 
-* Select elements without caring about order
-* Example: Combination Sum
-
----
-
-### 4️⃣ Constraint Based
-
-* Follow rules / constraints
-* Example: N-Queens, Sudoku
-
----
-
-## 📦 Important Problems
-
----
-
-### 🔹 1. Subset Problem (Power Set)
-
-👉 Generate all possible subsets of a string
-
-```java
-void findSubsets(String str, String ans, int i){
-    if(i == str.length()){
-        if(ans.length() == 0){
-            System.out.println("null");
-        } else {
-            System.out.println(ans);
-        }
-        return;
-    }
-
-    // include current character
-    findSubsets(str, ans + str.charAt(i), i + 1);
-
-    // exclude current character
-    findSubsets(str, ans, i + 1);
-}
+### 🔁 Backtracking Flow
+```
+arr[i] = v        (choose)
+recurse
+arr[i] -= 2       (undo)
 ```
 
-💡 Pattern: **Include / Exclude (Decision Tree)**
-⏱ Time Complexity: `O(2^n)`
+### ⏱ Complexity
+- Time: O(n)
+- Space: O(n recursion)
+
+### 🧠 Key Insight
+Backtracking = modifying SAME structure and undoing it.
 
 ---
 
-### 🔹 2. Permutation Problem
+## 2. Subsets (Power Set)
 
-👉 Generate all permutations of a string
+### 🔍 Problem
+Generate all subsets of a string.
 
-```java
-void findPermutation(String str, String ans){
-    if(str.length() == 0){
-        System.out.println(ans);
-        return;
-    }
+### 💡 Intuition
+Each character has 2 choices:
+- Include
+- Exclude
 
-    for(int i = 0; i < str.length(); i++){
-        char curr = str.charAt(i);
+### ⚙️ Approach
+- Include char → recurse
+- Exclude char → recurse
 
-        String newStr = str.substring(0, i) + str.substring(i + 1);
-
-        findPermutation(newStr, ans + curr);
-    }
-}
+### 🔁 Flow
+```
+include → recurse
+exclude → recurse
 ```
 
-💡 Pattern: **Fix one element, permute rest**
-⏱ Time Complexity: `O(n!)`
+### ⏱ Complexity
+- Time: O(2^n)
+- Space: O(n)
+
+### 🧠 Key Insight
+Every element doubles possibilities.
 
 ---
 
-### 🔹 3. N-Queen Problem
+## 3. Permutations
 
-👉 Place N queens so that no queen attacks another
+### 🔍 Problem
+Generate all possible arrangements.
 
-```java
-boolean isSafe(char[][] board, int row, int col){
+### 💡 Intuition
+Fix one character, permute remaining.
 
-    // check vertical up
-    for(int i = row - 1; i >= 0; i--){
-        if(board[i][col] == 'Q') return false;
-    }
+### ⚙️ Approach
+- Pick a character
+- Remove it
+- Recurse
 
-    // check left diagonal
-    for(int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--){
-        if(board[i][j] == 'Q') return false;
-    }
+### ⏱ Complexity
+- Time: O(n!)
+- Space: O(n)
 
-    // check right diagonal
-    for(int i = row - 1, j = col + 1; i >= 0 && j < board.length; i--, j++){
-        if(board[i][j] == 'Q') return false;
-    }
+### 🧠 Key Insight
+Permutation = fixing position one by one.
 
-    return true;
-}
+---
 
-void nQueen(char[][] board, int row){
-    if(row == board.length){
-        printBoard(board);
-        return;
-    }
+## 4. N-Queens
 
-    for(int col = 0; col < board.length; col++){
-        if(isSafe(board, row, col)){
-            board[row][col] = 'Q';   // choose
-            nQueen(board, row + 1);  // explore
-            board[row][col] = '.';   // undo (backtrack)
-        }
-    }
-}
+### 🔍 Problem
+Place N queens so no one attacks another.
+
+### 💡 Intuition
+Try placing queen row by row safely.
+
+### ⚙️ Approach
+- Try each column
+- Check safety
+- Place → recurse → remove
+
+### 🔁 Flow
+```
+if safe:
+   place
+   recurse
+   remove
 ```
 
-💡 Pattern: **Constraint + Backtracking**
-⏱ Time Complexity: ~`O(N!)`
+### ⏱ Complexity
+- Time: ~O(N!)
+- Space: O(N)
+
+### 🧠 Key Insight
+Prune invalid positions early.
 
 ---
 
-## 🧠 Mental Model
+## 5. Grid Ways
 
-👉 Think like this:
+### 🔍 Problem
+Count ways from (0,0) to (n-1,m-1)
 
-* “At every step, I have choices”
-* “I will try each choice”
-* “If it fails, I go back”
+### 💡 Intuition
+Only 2 moves:
+- Right
+- Down
+
+### ⚙️ Approach
+```
+ways(i,j) = down + right
+```
+
+### ⏱ Complexity
+- Time: O(2^(n+m))
+- Space: O(n+m)
+
+### 🧠 Key Insight
+This is recursion + overlapping (can optimize using DP).
 
 ---
+
+## 6. Sudoku Solver
+
+### 🔍 Problem
+Fill grid following rules.
+
+### 💡 Intuition
+Try digits 1–9 and backtrack if invalid.
+
+### ⚙️ Approach
+- Find empty cell
+- Try digit
+- Check safe
+- Recurse
+- Undo if fails
+
+### 🔁 Flow
+```
+place digit
+recurse
+if fail → remove digit
+```
+
+### ⏱ Complexity
+- Very high (worst exponential)
+
+### 🧠 Key Insight
+Constraint checking = pruning.
+
+---
+
+## 🧩 When to Use Backtracking
+Use when:
+- "Find all ways"
+- "All combinations"
+- "All permutations"
+- Constraint satisfaction problems
+
+---
+
+## ⚡ Optimization Ideas
+- Pruning (stop early)
+- Avoid unnecessary recursion
+- Use memoization (if overlapping)
+
+---
+
+## 🎯 Interview Tips
+- Always explain:
+  - Choices
+  - Base case
+  - Backtracking step
+- Draw recursion tree
+- Start brute-force → optimize
