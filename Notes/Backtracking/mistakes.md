@@ -4,13 +4,24 @@
 
 ## 🚫 Mistake 1: Forgot to Undo Choice
 
-**Problem:** Wrong results / duplicates  
+**Problem:** Wrong results / wrong paths  
 
 **Why it happened:**  
-I made a choice but didn’t revert it  
+Made a choice but didn’t revert it  
 
 **Fix:**  
-Always write **remove() / undo step after recursion**
+Always write undo step after recursion  
+
+General:
+```
+remove() / unmark
+```
+
+Grid problems:
+```
+sol[x][y] = 0;   // maze
+sol[x][y] = -1;  // knight tour
+```
 
 ---
 
@@ -22,9 +33,22 @@ Always write **remove() / undo step after recursion**
 Did not clearly define when solution is complete  
 
 **Fix:**  
-Clearly define:
-👉 When to add answer  
-👉 When to stop recursion  
+
+Clearly define base cases:
+
+- Subset / permutation → when input exhausted  
+- Maze:
+```
+if (x == n-1 && y == n-1)
+```
+- Keypad:
+```
+if (pos == len)
+```
+- Knight Tour:
+```
+if (movei == N*N)
+```
 
 ---
 
@@ -51,7 +75,7 @@ Did not understand “undo step”
 
 ---
 
-## 🚫 Mistake 5: Not Visualizing Tree
+## 🚫 Mistake 5: Not Visualizing Tree / Grid
 
 **Problem:** Hard to debug  
 
@@ -59,7 +83,9 @@ Did not understand “undo step”
 Tried to think linearly  
 
 **Fix:**  
-Draw **recursion tree / decision tree**
+Draw:
+- Recursion tree (subset, keypad)  
+- Grid (maze, knight)  
 
 ---
 
@@ -173,6 +199,95 @@ Same array/board reused across recursion
 
 ---
 
+## 🚫 Mistake 13: Not Marking Visited (Grid Problems)
+
+**Problem:** Infinite loops / revisiting same cell  
+
+**Where it happened:**  
+Maze, Knight Tour  
+
+**Fix:**  
+Mark before recursion:
+```
+sol[x][y] = 1;
+```
+
+Undo later
+
+---
+
+## 🚫 Mistake 14: Direction Handling Mistake (Maze)
+
+❌ Tried only one direction  
+❌ Missed valid paths  
+
+**Fix:**  
+Always try:
+- Down → `(x+1, y)`  
+- Right → `(x, y+1)`  
+
+---
+
+## 🚫 Mistake 15: String Handling Mistake (Keypad)
+
+❌ Same string reused  
+❌ Output overwritten  
+
+**Fix:**  
+```
+new StringBuilder(sb).append(letter)
+```
+
+---
+
+## 🚫 Mistake 16: Digit Mapping Mistake (Keypad)
+
+❌ Wrong index access  
+
+**Fix:**  
+```
+Character.getNumericValue(D.charAt(pos))
+```
+
+---
+
+## 🚫 Mistake 17: Safe Function Errors
+
+**Problem:** Out of bounds / invalid moves  
+
+**Fix:**  
+```
+x >= 0 && x < n
+y >= 0 && y < n
+```
+
+Plus:
+- Maze → `maze[x][y] == 1`  
+- Knight → `sol[x][y] == -1`  
+
+---
+
+## 🚫 Mistake 18: Knight Move Logic Confusion
+
+❌ Missing moves  
+
+**Fix:**  
+Use all 8 moves:
+```
+{2,1}, {1,2}, {-1,2}, {-2,1}, {-2,-1}, {-1,-2}, {1,-2}, {2,-1}
+```
+
+---
+
+## 🚫 Mistake 19: Printing Too Early
+
+**Problem:** Incomplete output  
+
+**Fix:**  
+Print only at base case  
+
+---
+
 # 🧠 Debugging Checklist
 
 Before coding:
@@ -192,7 +307,7 @@ During debugging:
 - Always visualize recursion tree  
 - Use small inputs to debug  
 - Dry run manually  
-- If stuck → check base case + undo  
+- Think in patterns (grid / tree / permutation)  
 
 ---
 
@@ -204,9 +319,9 @@ During debugging:
 
 ## 📉 Current Weak Areas
 
-- ❌ Choosing correct pattern (subset / permutation / combination)  
+- ❌ Choosing correct pattern  
 - ❌ Handling duplicates  
-- ❌ Writing clean recursive structure  
+- ❌ Visualizing recursion  
 
 ---
 
@@ -214,15 +329,15 @@ During debugging:
 
 ✔ Solve 2–3 problems daily  
 ✔ Classify problem type first  
-✔ Always draw recursion tree  
-✔ Practice dry run on paper  
+✔ Draw recursion tree / grid  
+✔ Practice dry run  
 
 ---
 
 ## 🧠 Reality Check
 
 👉 If stuck → Pattern not clear  
-👉 If confused → Didn’t visualize tree  
+👉 If confused → Didn’t visualize  
 👉 If wrong output → Undo step missing  
 
 ---
