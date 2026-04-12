@@ -10,7 +10,8 @@
 
 ## 📍 Current Status
 
-🔁 Currently studying: **Backtracking (Array + Subset + Permutation + N-Queen + Sudoku + Grid Ways)**
+🔁 Currently studying:  
+**Backtracking (Array + Subset + Permutation + N-Queen + Sudoku + Grid Ways + Maze + Keypad + Knight Tour)**
 
 ---
 
@@ -58,81 +59,94 @@
 
 * Merge Sort (numbers + strings implemented)
 * Quick Sort (partition logic implemented)
-* Search in Rotated Sorted Array (modified binary search)
-* Majority Element (Brute Force + Divide & Conquer)
-* Inversion Count (Brute Force + Optimized Merge Sort)
+* Search in Rotated Sorted Array
+* Majority Element (Brute + Divide & Conquer)
+* Inversion Count (Brute + Optimized)
 
 ---
 
 ### ✔ Time & Space Complexity (FULL MODULE ✅)
 
-* Big O, Omega, Theta (clear understanding)
+* Big O, Omega, Theta
 * Complexity order (O(1) → O(2ⁿ))
-* Loop analysis (simple, nested, logarithmic)
-* Space complexity (input vs auxiliary)
+* Loop analysis
+* Space complexity
 
 #### 🔥 Algorithm Analysis Added:
 
-* Bubble Sort (best, avg, worst cases)
-* Binary Search (logarithmic analysis)
-* Recursive functions complexity
-* Fibonacci (naive vs optimized insight)
-* Merge Sort → O(n log n) with recurrence
-* Recurrence relations (basic Master Theorem idea)
-* Power Function:
-  * Naive → O(n)
-  * Fast Power → O(log n)
-  * Iterative fast exponentiation
+* Bubble Sort
+* Binary Search
+* Recursive complexity
+* Fibonacci (naive vs optimized)
+* Merge Sort → O(n log n)
+* Recurrence relations
+* Fast exponentiation (O(log n))
 
 ---
 
 ### ✔ Backtracking (IN PROGRESS 🔄)
 
-* Introduction to backtracking
-* Types of backtracking (decision / permutation / combination / constraint)
-* Backtracking approach (choose → explore → undo)
-* Array backtracking
-* Subset problem (include / exclude pattern)
-* Permutation problem (fix + recurse pattern)
-* N-Queen problem (constraint checking + diagonal logic)
-* Sudoku solver backtracking
-* Grid Ways counting
+#### ✅ Core Patterns
+* Choose → Explore → Undo
+* Decision tree understanding
+* Recursion + backtracking difference
+
+#### ✅ Problems Implemented
+
+* Array Backtracking
+* Subset Problem (include / exclude)
+* Permutations (fix + recurse)
+* N-Queen Problem (constraints + diagonals)
+* Sudoku Solver (constraint satisfaction)
+* Grid Ways (right + down recursion)
+
+#### 🆕 Newly Added Implementations
+
+* 🐭 Rat in a Maze (path finding using backtracking)
+* ☎️ Phone Keypad Combinations (tree recursion / DFS)
+* ♞ Knight’s Tour (full board traversal)
 
 ---
 
 ## 🚀 What I Am Currently Doing
 
-* 🧠 Practicing **subset problems**
+* 🧠 Practicing **subset variations**
 * 🧠 Practicing **permutation problems**
+* 🧠 Solving **maze-based problems**
+* 🧠 Generating **keypad combinations**
+* 🧠 Understanding **Knight Tour deeply**
 * 🧠 Visualizing **N-Queen placements**
-* 🧠 Understanding **Sudoku backtracking**
-* 🧠 Tracing **Grid Ways recursion**
-* 🧠 Strengthening **choose → explore → undo pattern**
+* 🧠 Strengthening **choose → explore → undo**
 
 ---
 
 ## 🧩 Problem Tracking
 
-| Topic            | Progress          |
-| ---------------- | ----------------- |
-| Arrays           | Basic ✅           |
-| Recursion        | 15+ Problems ✅    |
-| Divide & Conquer | 6 Problems ✅      |
-| Time Complexity  | Full + Advanced ✅ |
-| Backtracking     | Core Patterns 🔄  |
-| Strings          | Basic Practice 🔄 |
-| Sudoku Solver    | Started 🔄        |
-| Grid Ways        | Started 🔄        |
+| Topic            | Progress              |
+| ---------------- | --------------------- |
+| Arrays           | Basic ✅               |
+| Recursion        | 15+ Problems ✅        |
+| Divide & Conquer | 6 Problems ✅          |
+| Time Complexity  | Full + Advanced ✅     |
+| Backtracking     | Core + Extended 🔄    |
+| Strings          | Basic Practice 🔄     |
+| Sudoku Solver    | Practicing 🔄         |
+| Grid Ways        | Practicing 🔄         |
+| Maze Problem     | Implemented ✅        |
+| Keypad Problem   | Implemented ✅        |
+| Knight Tour      | Implemented 🔄        |
 
 ---
 
 ## ⚠️ Real Struggles (Important)
 
-* ❌ Confusion in **pattern selection (subset vs permutation vs grid ways)**
+* ❌ Confusion in **pattern selection (subset vs permutation vs grid vs maze)**
 * ❌ Forgetting **undo step sometimes**
 * ❌ Slow recursion tracing
 * ❌ N-Queen visualization still weak
 * ❌ Sudoku constraints tricky initially
+* ❌ Knight Tour feels complex (many moves)
+* ❌ Maze direction handling confusion
 
 ---
 
@@ -140,11 +154,13 @@
 
 * ✔ Solve **more subset variations**
 * ✔ Practice **permutations deeply**
-* ✔ Improve **N-Queen understanding**
-* ✔ Practice **Sudoku backtracking thoroughly**
+* ✔ Improve **N-Queen visualization**
+* ✔ Master **Sudoku constraints**
+* ✔ Practice **maze variations (all paths)**
+* ✔ Strengthen **Knight Tour logic**
 * ✔ Draw recursion trees daily
-* ✔ Start **medium-level backtracking problems**
-* ✔ Track mistakes & corrections regularly
+* ✔ Start **medium-level problems**
+* ✔ Track mistakes regularly
 
 ---
 
@@ -156,38 +172,44 @@
 
 ### 🧠 What I Studied
 
-**Backtracking (Array + Subset + Permutation + N-Queen + Sudoku + Grid Ways)**
+**Backtracking (Core + Maze + Keypad + Knight Tour)**
 
 ---
 
 ### ⚙️ What I Did
 
-* Practiced **subset problem (include/exclude)**
+* Practiced **subset problem**
 * Implemented **permutation logic**
-* Studied **N-Queen constraint checking**
-* Traced **Sudoku backtracking**
-* Counted **Grid Ways with recursion**
-* Improved **backtracking structure (choose → explore → undo)**
+* Studied **N-Queen constraints**
+* Traced **Sudoku solver**
+* Solved **Grid Ways recursion**
+* Implemented **Rat in a Maze**
+* Generated **Keypad combinations**
+* Worked on **Knight Tour logic**
 
 ---
 
 ### ✅ What I Understood
 
-* ✔ Subset = decision tree (include / exclude)
-* ✔ Permutation = fix one element + recurse
-* ✔ N-Queen = constraint-based backtracking
-* ✔ Sudoku = recursive fill + backtrack
-* ✔ Grid Ways = move right/down recursively
-* ✔ Backtracking requires **strict undo step**
+* ✔ Subset = include / exclude tree  
+* ✔ Permutation = fix + recurse  
+* ✔ N-Queen = constraint-based placement  
+* ✔ Sudoku = recursive fill + backtrack  
+* ✔ Grid Ways = right + down recursion  
+* ✔ Maze = path finding with backtracking  
+* ✔ Keypad = tree recursion (DFS)  
+* ✔ Knight Tour = full board traversal  
+* ✔ Backtracking = **must undo every step**
 
 ---
 
 ### ❌ Where I Got Stuck
 
-* ❌ Pattern confusion (when to use which)
-* ❌ N-Queen visualization still hard
-* ❌ Sudoku backtracking slow initially
-* ❌ Grid ways recursion boundaries tricky
+* ❌ Pattern confusion still happens  
+* ❌ Knight Tour hard to visualize  
+* ❌ Sudoku slow initially  
+* ❌ Maze edge cases tricky  
+* ❌ Forgetting undo in complex problems  
 
 ---
 
