@@ -221,11 +221,107 @@ Constraint checking = pruning.
 
 ---
 
+## 7. Rat in a Maze 🐭
+
+### 🔍 Problem
+Find a path from top-left to bottom-right in a grid.
+
+### 💡 Intuition
+Move step by step, if blocked → backtrack.
+
+### ⚙️ Approach
+- Start at (0,0)
+- Move:
+  - Down
+  - Right
+- Mark path
+- If stuck → unmark
+
+### 🔁 Flow
+```
+if safe:
+   mark
+   recurse (down/right)
+   unmark
+```
+
+### ⏱ Complexity
+- Time: O(2^(n*n)) worst case
+- Space: O(n*n)
+
+### 🧠 Key Insight
+This is **path finding using backtracking**
+
+---
+
+## 8. Phone Keypad Combinations ☎️
+
+### 🔍 Problem
+Generate all letter combinations for digits.
+
+### 💡 Intuition
+Each digit gives multiple choices → like a tree.
+
+### ⚙️ Approach
+- Take digit
+- Try all mapped letters
+- Recurse for next digit
+
+### 🔁 Flow
+```
+for each letter:
+   append
+   recurse
+```
+
+### ⏱ Complexity
+- Time: O(4^n)
+- Space: O(n)
+
+### 🧠 Key Insight
+This is **tree recursion (DFS), not BFS**
+
+---
+
+## 9. Knight’s Tour ♞
+
+### 🔍 Problem
+Visit all cells of chessboard exactly once.
+
+### 💡 Intuition
+Try all 8 possible moves and backtrack if stuck.
+
+### ⚙️ Approach
+- Start at (0,0)
+- Try all 8 moves
+- Mark move number
+- Backtrack if fails
+
+### 🔁 Flow
+```
+for each move:
+   if safe:
+      mark
+      recurse
+      unmark
+```
+
+### ⏱ Complexity
+- Time: O(8^(N*N)) worst
+- Space: O(N*N)
+
+### 🧠 Key Insight
+This is **full board exploration problem**
+
+---
+
 ## 🧩 When to Use Backtracking
 Use when:
 - "Find all ways"
 - "All combinations"
 - "All permutations"
+- Path finding (maze)
+- Full coverage problems (knight tour)
 - Constraint satisfaction problems
 
 ---
@@ -242,5 +338,29 @@ Use when:
   - Choices
   - Base case
   - Backtracking step
-- Draw recursion tree
+- Draw recursion tree / grid
 - Start brute-force → optimize
+
+---
+
+## ⚡ Golden Pattern (Must Remember)
+
+```
+if (base case)
+   return
+
+if (safe):
+   make move
+   recurse
+   undo move
+```
+
+---
+
+## 🧠 Final Understanding
+
+- Backtracking = controlled recursion  
+- Works on trees / grids / combinations  
+- Key = **explore + undo**
+
+---
